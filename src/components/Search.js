@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const Search = () => {
+export const Search = () => {
   
   const [term, setTerm] = useState("");
   const [result, setResult] = useState([]);
@@ -62,5 +62,3 @@ const renderedResults = result.map(res => {
   </div>
   );
 }
-
-export default Search; 
